@@ -674,6 +674,12 @@ h1 .green {
 	.scrollx-item {
 		max-width: 70%;
 	}
+	#services .scrollx-item {
+		padding-right: 0;
+	}
+	#services .scrollx-item:last-child {
+		padding-right: 15px;
+	}
 	#arguments .scrollx-item {
 		max-width: 226px;
 		padding-bottom: 60px;
