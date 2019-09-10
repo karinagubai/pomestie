@@ -3,11 +3,12 @@
 $('.open-nav').on('click', function(){
   $('.main-nav').css("display", "block");
 });
-$('.close-nav').on('click', function(){
-  $('.main-nav').hide();
-});
-
 $('.main-nav').on('click', 'a', function(){
+  if($(window).width() < 992) {
+    $('.main-nav').hide();
+  }
+});
+$('.close-nav').on('click', function(){
   $('.main-nav').hide();
 });
 
@@ -20,8 +21,8 @@ $(window).on('scroll', function(){
 });
 
 $(window).resize(function(){
-  if (window.innerWidth > 991) {
-        $('.main-nav').css("display", "flex");
+  if ($(window).width() > 991) {
+        $('.main-nav').css("display", "block");
     } else {
         $('.main-nav').hide();
     }
