@@ -35,3 +35,9 @@ $('.right').on('click', function(){
 $('.left').on('click', function(){
   $('.project:last').insertBefore('.project:first');
 });
+
+// inputmask
+
+$(document).ready(function(){
+  $('input[type="tel"]').inputmask("+7 (999) 999 99 99");
+});
