@@ -1,0 +1,1028 @@
+@font-face {
+			font-family: "Museo100";
+			src: url("fonts/MuseoSansCyrl-100.eot");
+			src: url("fonts/MuseoSansCyrl-100.eot?#iefix")format("embedded-opentype"),
+			     url("fonts/MuseoSansCyrl-100.woff") format("woff"),
+			     url("fonts/MuseoSansCyrl-100.ttf") format("truetype");
+	}
+
+@font-face {
+			font-family: "Museo300";
+			src: url("fonts/MuseoSansCyrl-300.eot");
+			src: url("fonts/MuseoSansCyrl-300.eot?#iefix")format("embedded-opentype"),
+			     url("fonts/MuseoSansCyrl-300.woff") format("woff"),
+			     url("fonts/MuseoSansCyrl-300.ttf") format("truetype");
+	}
+
+@font-face {
+			font-family: "Museo500";
+			src: url("fonts/MuseoSansCyrl-500.eot");
+			src: url("fonts/MuseoSansCyrl-500.eot?#iefix")format("embedded-opentype"),
+			     url("fonts/MuseoSansCyrl-500.woff") format("woff"),
+			     url("fonts/MuseoSansCyrl-500.ttf") format("truetype");
+	}
+
+@font-face {
+			font-family: "Museo900";
+			src: url("fonts/MuseoSansCyrl-900.eot");
+			src: url("fonts/MuseoSansCyrl-900.eot?#iefix")format("embedded-opentype"),
+			     url("fonts/MuseoSansCyrl-900.woff") format("woff"),
+			     url("fonts/MuseoSansCyrl-900.ttf") format("truetype");
+	}
+
+	/* =================================
+	  Base Element Styles
+	==================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Museo100', Arial, sans-serif;
+	font-size: 16px;
+}
+
+h1 {
+	font-size: 35px;
+}
+
+h2 {
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+p {
+	line-height: 26px;
+	margin-bottom: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+header {
+	position: fixed;
+  width: 100%;
+	z-index: 1000;
+}
+
+.sticky {
+	background: rgba(255, 255, 255, 1);
+	padding-bottom: 16px;
+}
+
+.sticky .logo {
+	width: 86px;
+}
+
+.sticky .address-container,
+.sticky .worktime {
+	display: none;
+}
+
+.nav-container {
+	display: flex;
+  justify-content: space-between;
+	align-items: center;
+	padding-top: 16px;
+}
+
+.main-nav li {
+	list-style-type: none;
+	margin-bottom: 20px;
+}
+
+.main-nav li a {
+	color: #2c2c2c;
+	text-decoration: none;
+}
+
+.main-nav li a:hover {
+	color: #f66c54;
+}
+
+.open-nav,
+.close-nav {
+    position: relative;
+		display: inline-block;
+    height: 20px;
+    width: 27px;
+}
+
+.open-nav span,
+.close-nav span {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    height: 4px;
+    width: 27px;
+		border-radius: 2px;
+    background-color: #2c2c2c;
+}
+
+.open-nav .topspan {
+  top: 0;
+}
+
+.open-nav .middlespan {
+  top: 8px;
+}
+
+.open-nav .bottomspan {
+  bottom: 0;
+}
+
+.close-nav .spanone {
+  transform: rotate(45deg);
+}
+
+.close-nav .spantwo {
+  transform: rotate(-45deg);
+}
+
+.address-container {
+	display: none;
+	width: 212px;
+}
+
+.iconmap {
+	margin-right: 15px;
+	padding-top: 10px;
+}
+
+.iconmap img {
+	width: 20px;
+}
+
+.worktime {
+	font-size: 13px;
+}
+
+.telnumber {
+	font-size: 22px;
+}
+
+/* ---- Layout Containers ---- */
+
+.section-padding {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+#banner {
+	position: relative;
+	background: url('img/banner-sky.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 928px;
+}
+
+.house-container {
+	position: relative;
+	height: 928px;
+	padding-top: 114px;
+	overflow: hidden;
+}
+
+#about-company {
+	position: relative;
+	overflow: hidden;
+	background: url('img/bg-about.jpg') no-repeat;
+}
+
+#projects,
+#services {
+	position: relative;
+	background: #f3f5f7;
+}
+
+#advices {
+	position: relative;
+	background: url('img/bg-advices.jpg') no-repeat center/cover;
+}
+
+#smallform {
+	position: relative;
+	background: url('img/bg-smallform.jpg') no-repeat center/cover;
+	padding-bottom: 240px;
+}
+
+/* ---- Page Elements ---- */
+
+.font-light {
+	font-family: 'Museo100', Arial, sans-serif;
+}
+
+.font-regular {
+	font-family: 'Museo300', Arial, sans-serif;
+}
+
+.font-bold {
+	font-family: 'Museo500', Arial, sans-serif;
+}
+
+.font-black {
+	font-family: 'Museo900', Arial, sans-serif;
+}
+
+.green {
+	color: #53b158;
+}
+
+.banner-oblaka {
+	height: 330px;
+	width: 100%;
+	top: 753px;
+	background: url('img/banner-oblaka.png');
+	background-size: cover;
+}
+
+.banner-house {
+	height: 569px;
+	width: 100%;
+	background: url('img/banner-house.png');
+	background-size: cover;
+	background-position: 70%;
+	top: 558px;
+}
+
+.banner-tree {
+	display: none;
+	height: 593px;
+	top: 538px;
+	left: -35px;
+	z-index: 3;
+}
+
+.banner-tree img {
+	max-height: 100%;
+}
+
+.banner-text {
+	max-width: 475px;
+}
+
+.banner-text h4 {
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+h1 .green {
+	display: block;
+}
+
+.filter-nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ---- Carousel ---- */
+
+.projects-carousel {
+	margin-top: 30px;
+	position: relative;
+}
+
+.projects {
+	display: flex;
+	overflow-x: hidden;
+	margin: 0 auto;
+	width: 276px;
+}
+
+.project {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.project-card {
+	width: 246px;
+	background: white;
+	border-radius: 10px;
+	padding-bottom: 34px;
+}
+
+.project-card h3 {
+	margin-top: 20px;
+}
+
+.project-img {
+	height: 156px;
+	overflow: hidden;
+	border-radius: 10px 10px 0 0;
+}
+
+.project-info,
+.square-info,
+.bedrooms {
+	display: flex;
+}
+
+.project-info {
+	justify-content: space-around;
+	padding: 10px 10px 0;
+}
+
+.project-info img {
+	width: 26px;
+	margin-right: 5px;
+}
+
+.hline {
+	margin: 20px 10px;
+}
+
+.price {
+	font-size: 23px;
+	margin-bottom: 23px;
+}
+
+.left,
+.right {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 185px;
+	background: white;
+	width: 37px;
+	height: 37px;
+	border-radius: 50%;
+}
+
+.left {
+	left:0;
+}
+
+.right {
+	right: 0;
+}
+
+.left img,
+.right img {
+	height: 17px;
+}
+
+/* ---- Advice section ---- */
+
+.advices-amount {
+	display: block;
+	margin-top: 40px;
+	font-size: 150px;
+	line-height: 150px;
+}
+
+#advices h2 {
+	margin-top: -100px;
+	margin-bottom: 30px;
+}
+
+/* ---- Section with small form ---- */
+
+#smallform h2 {
+	padding-top: 86px;
+	max-width: 630px;
+}
+
+.input-rounded {
+	outline: none;
+	border: none;
+	box-shadow: inset 0 0 16px rgba(0, 0, 0, .14);
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.input-rounded:focus {
+	box-shadow: inset 0 0 6px rgba(246, 108, 84, .9);
+}
+
+#smallform .agree-block {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.agree-block label {
+	font-size: 13px;
+	color: #747474;
+	display: inline;
+}
+
+.agree-block a {
+	color: #747474;
+}
+
+#smallform .call-us {
+	font-size: 18px;
+}
+
+#smallform .call-us span {
+	font-size: 23px;
+	margin-left: 10px;
+}
+
+.construction-img {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 230px;
+	background: url('img/construction.png') no-repeat;
+	background-position: center top;
+  background-size: 120%;
+}
+
+/* ---- Services ---- */
+
+.service {
+	position: relative;
+	border-radius: 10px;
+	overflow: hidden;
+	margin-bottom: 30px;
+	transition: all .5s;
+	height: 209px;
+}
+
+.service-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #2c2c2c;
+	opacity: .42;
+}
+
+.service img {
+	max-width: 200%;
+}
+
+.service-info {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.service:hover {
+	transform: translateY(-12px);
+	box-shadow: 0 11px 24px 0 rgba(44, 44, 44, .29);
+}
+
+.service:hover .service-overlay {
+	background: white;
+	opacity: .83;
+}
+
+.service:hover .service-info,
+.service:hover a {
+	color: #2c2c2c;
+}
+
+.service-info h3 {
+	font-size: 20px;
+	text-align: center;
+}
+
+.blocklink {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/* ---- Arguments section ---- */
+
+.argument {
+	position: relative;
+	width: 206px;
+	height: 320px;
+	border-radius: 10px;
+	padding: 15px;
+	box-shadow: 0 5px 24px 0 rgba(44, 44, 44, .11);
+}
+
+.argument {
+	margin-top: 70px;
+}
+
+.arg-icon {
+	margin-top: -70px;
+}
+
+.argument h3 {
+	font-size: 18px;
+	margin-top: -10px;
+}
+
+.argnum {
+	position: absolute;
+	bottom: 0px;
+	left: 45px;
+	height: 60px;
+	color: #f7f9fa;
+	font-size: 100px;
+	line-height: 100px;
+	overflow: hidden;
+}
+
+.argument p {
+	position: relative;
+	z-index: 2;
+}
+
+/* ---- Buttons and links ---- */
+
+.green-dotted {
+	color: #53b158;
+	text-decoration: none;
+	border-bottom: 2px dotted #53b158;
+}
+
+.green-dotted:hover {
+	color: #53b158;
+	text-decoration: none;
+}
+
+.service-link {
+	color: white;
+	text-decoration: underline;
+}
+
+.btn,
+.input-rounded {
+	font-size: 16px;
+	border-radius: 33px;
+	padding: 20px 40px;
+}
+
+.btn-callout {
+	color: white;
+	background: linear-gradient(#f69954, #f66c54);
+	border: none;
+	border-bottom: 5px solid #d65943;
+	box-shadow: 0 11px 24px 0 rgba(246, 108, 84, .79);
+
+}
+
+.btn-callout:hover {
+	color: white;
+	background: linear-gradient(#f66c54, #f69954);
+}
+
+.banner-text .btn-callout,
+#about-company .btn-callout {
+	margin-top: 37px;
+	position: relative;
+}
+
+.btn-filter {
+	color: #53b158;
+	font-size: 16px;
+	text-transform: uppercase;
+	background: none;
+	border: 1px solid #53b158;
+	margin-bottom: 20px;
+}
+
+.btn-filter-active {
+	color: white;
+	background: #53b158;
+	box-shadow: 0 11px 24px 0 rgba(83, 177, 88, .67);
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (max-width: 320px){
+	.tel-container {
+		display: none;
+	}
+	.btn {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 420px){
+	.left {
+		left: 30px;
+	}
+	.right {
+		right: 30px;
+	}
+	.construction-img {
+		background-size: 110%;
+	}
+}
+
+@media (max-width: 420px){
+
+	.scrollx-item {
+		max-width: 90%;
+	}
+}
+
+@media (max-width: 575px) {
+	.logo {
+		width: 86px;
+	}
+	.worktime {
+		display: none;
+	}
+	.telnumber {
+		font-size: 18px;
+	}
+	.scrollx-container {
+		flex-wrap: nowrap;
+		justify-content: start!important;
+		margin-right: 0;
+		margin-left: 0;
+		overflow-x: auto;
+	}
+	.scrollx-item {
+		max-width: 70%;
+	}
+	#arguments .scrollx-item {
+		max-width: 226px;
+		padding-bottom: 60px;
+	}
+	#arguments .scrollx-item:last-child {
+		max-width: 246px;
+		justify-content: flex-start;
+		padding-left: 10px;
+	}
+	#arguments {
+		padding-bottom: 0;
+	}
+}
+
+@media (min-width: 420px) and (max-width: 530px){
+	#arguments .scrollx-item {
+		max-width: 296px;
+	}
+	#arguments .scrollx-item:first-item {
+	  margin-left: 20px;
+	}
+	.argument {
+		width: 266px;
+		height: 280px;
+	}
+}
+
+@media (min-width: 576px) {
+	#banner,
+	.house-container {
+		height: 779px;
+	}
+	.house-container {
+		padding-top: 200px;
+	}
+	.banner-house {
+		background-position: 0%;
+		top: 350px;
+    right: -150px;
+	}
+	.banner-oblaka {
+		top: 578px;
+	}
+	.btn {
+		font-size: 18px;
+	}
+	.projects {
+		width: 552px;
+	}
+	.left {
+		left:0;
+	}
+	.right {
+		right: 0;
+	}
+	#advices h2 {
+		margin-bottom: 70px;
+	}
+	#smallform {
+		padding-bottom: 80px;
+	}
+	.construction-img {
+    bottom: 150px;
+    width: 250px;
+    height: 240px;
+    background-position: left top;
+    background-size: 150%;
+	}
+	.service {
+		height: 229px;
+	}
+}
+
+@media (min-width: 768px) {
+	.address-container {
+		display: flex;
+	}
+	.banner-tree {
+		display: block;
+	}
+	.banner-house {
+		height: 700px;
+		top: 280px;
+    right: -150px;
+	}
+	.banner-oblaka {
+		height: 350px;
+	}
+	.about-text {
+		max-width: 80%;
+		margin: 0 auto;
+	}
+	.about-leaf {
+		width: 80px;
+		height: 81px;
+		top: 230px;
+		left: -20px;
+		background: url('img/about-leaf.png');
+	}
+	.about-kirpich {
+		width: 244px;
+		height: 167px;
+		top: 30px;
+		right: -170px;
+		background: url('img/about-kirpich.png');
+	}
+	.filter-nav {
+		flex-direction: row;
+	}
+	.btn-filter {
+		margin-right: 20px;
+		margin-bottom: 0;
+	}
+	.btn-filter:last-child {
+		margin-right: 0;
+	}
+	.projects {
+		width: 600px;
+	}
+	.project-card {
+		width: 270px;
+	}
+	.left,
+	.right {
+		width: 53px;
+		height: 53px;
+	}
+	.left {
+		left:60px;
+	}
+	.right {
+		right: 60px;
+	}
+	.left img,
+	.right img {
+		height: 24px;
+	}
+	.projects-leaf {
+		background: url('img/projects-leaf.png') no-repeat;
+		background-position: right bottom;
+		width: 51px;
+		height: 123px;
+		top: 180px;
+		left: 0;
+	}
+	.projects-kirpich {
+		background: url('img/projects-kirpich.png') no-repeat;
+		background-position: left top;
+		width: 55px;
+		height: 140px;
+		top: -5px;
+		right: 0;
+	}
+	.advices-leaf {
+		background: url('img/advices-leaf.png') no-repeat;
+		background-position: left bottom;
+		width: 36px;
+		height: 109px;
+		top: 15px;
+		right: 0;
+	}
+	.advices-kirpich {
+		background: url('img/advices-kirpich.png') no-repeat;
+		background-position: right top;
+		width: 82px;
+		height: 115px;
+		bottom: -45px;
+		left: 0;
+		z-index: 3;
+	}
+	#smallform {
+		padding-bottom: 70px;
+	}
+	.construction-img {
+		bottom: 0;
+		width: 300px;
+    height: 180px;
+		background-size: 140%;
+	}
+	.input-rounded {
+		margin-right: 20px;
+		margin-bottom: 0;
+		display: inline;
+	}
+	.service {
+		height: 249px;
+	}
+}
+
+@media (max-width: 991px) {
+	.main-nav {
+		position: absolute;
+		display: none;
+	  width: 100%;
+		height: 100vh;
+	  left: 0;
+	  top: 0;
+	  text-align: center;
+	  background: white;
+	  padding-top: 35px;
+	  z-index: 1;
+	}
+	.main-nav li a {
+		font-size: 35px;
+	}
+	.sticky .logo {
+		margin-right: auto;
+	}
+	.sticky .tel-container {
+		margin-right: 30px;
+	}
+}
+
+@media (min-width: 992px) {
+	.section-padding {
+		padding-top: 95px;
+		padding-bottom: 95px;
+	}
+	h1 {
+		font-size: 43px;
+	}
+	h2 {
+		font-size: 34px;
+		margin-bottom: 30px;
+	}
+	.address-container {
+		display: none;
+	}
+	.open-nav span,
+	.close-nav span {
+	  display: none;
+  }
+	.main-nav ul {
+		display: flex;
+	}
+	.main-nav li {
+		margin-bottom: 0;
+		margin-right: 20px;
+	}
+	.main-nav li a {
+		color: #2c2c2c;
+		text-decoration: none;
+	}
+	.banner-house {
+		height: 800px;
+		top: 220px;
+		background-position: 70% top;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	.banner-text {
+		max-width: 600px;
+	}
+	.banner-text h4 {
+		font-size: 22px;
+	}
+	.banner-text p {
+		max-width: 465px;
+	}
+	.about-text {
+		max-width: 70%;
+	}
+	.about-leaf {
+		top: 200px;
+		left: 50px;
+	}
+	.about-kirpich {
+		right: -100px;
+	}
+	.projects {
+		width: 828px;
+	}
+	.project-card {
+		width: 246px;
+	}
+	.projects-leaf {
+		width: 89px;
+		height: 143px;
+		top: 110px;
+	}
+	.projects-kirpich {
+		width: 175px;
+		height: 237px;
+		top: -130px;
+	}
+	#advices h2 {
+		margin-top: -120px;
+		margin-bottom: 90px;
+	}
+	.advices-amount {
+		font-size: 200px;
+		line-height: 200px;
+	}
+	.advices-leaf {
+		width: 100px;
+		height: 160px;
+		top: 75px;
+	}
+	.advices-kirpich {
+		width: 198px;
+		height: 163px;
+		bottom: -73px;
+	}
+	#smallform h2 {
+		max-width: 820px;
+	}
+	.construction-img {
+		width: 540px;
+    height: 240px;
+		background-size: cover;
+	}
+}
+@media (min-width: 1200px) {
+	h2 {
+		font-size: 45px;
+	}
+	.address-container {
+		display: flex;
+	}
+	.container-fluid {
+    max-width: 1190px;
+    margin: 0 auto;
+	}
+	.banner-text {
+		max-width: 700px;
+	}
+	.banner-text h1 {
+		font-size: 53px;
+	}
+	.banner-text p {
+		max-width: 600px;
+	}
+	.banner-tree {
+		left: 0;
+	}
+	.about-leaf {
+		top: 200px;
+		left: 50px;
+	}
+	.about-kirpich {
+		right: -100px;
+	}
+	.projects {
+		width: 1104px;
+	}
+	.left {
+		left: 0px;
+	}
+	.right {
+		right: 0px;
+	}
+	.construction-img {
+		width: 640px;
+    height: 340px;
+	}
+}
