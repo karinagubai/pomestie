@@ -410,6 +410,7 @@ h1 .green {
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 20px;
+	border: 1px solid #eee;
 }
 
 .input-rounded:focus {
@@ -459,7 +460,7 @@ h1 .green {
 	overflow: hidden;
 	margin-bottom: 30px;
 	transition: all .5s;
-	height: 209px;
+	height: 170px;
 }
 
 .service-overlay {
@@ -482,6 +483,7 @@ h1 .green {
 	left: 0;
 	width: 100%;
 	height: 100%;
+	padding: 5px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -489,23 +491,8 @@ h1 .green {
 	color: white;
 }
 
-.service:hover {
-	transform: translateY(-12px);
-	box-shadow: 0 11px 24px 0 rgba(44, 44, 44, .29);
-}
-
-.service:hover .service-overlay {
-	background: white;
-	opacity: .83;
-}
-
-.service:hover .service-info,
-.service:hover a {
-	color: #2c2c2c;
-}
-
 .service-info h3 {
-	font-size: 20px;
+	font-size: 16px;
 	text-align: center;
 }
 
@@ -572,6 +559,7 @@ h1 .green {
 }
 
 .service-link {
+	font-size: 14px;
 	color: white;
 	text-decoration: underline;
 }
@@ -589,7 +577,6 @@ h1 .green {
 	border: none;
 	border-bottom: 5px solid #d65943;
 	box-shadow: 0 11px 24px 0 rgba(246, 108, 84, .79);
-
 }
 
 .btn-callout:hover {
@@ -641,6 +628,15 @@ h1 .green {
 	.construction-img {
 		background-size: 110%;
 	}
+	.service {
+		height: 209px;
+	}
+	.service-info h3 {
+		font-size: 20px;
+	}
+	.service-link {
+		font-size: 16px;
+	}
 }
 
 @media (max-width: 420px){
@@ -666,6 +662,7 @@ h1 .green {
 		margin-right: 0;
 		margin-left: 0;
 		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
 	}
 	.scrollx-item {
 		max-width: 70%;
@@ -740,6 +737,18 @@ h1 .green {
 	}
 	.service {
 		height: 229px;
+	}
+	.service:hover {
+		transform: translateY(-12px);
+		box-shadow: 0 11px 24px 0 rgba(44, 44, 44, .29);
+	}
+	.service:hover .service-overlay {
+		background: white;
+		opacity: .83;
+	}
+	.service:hover .service-info,
+	.service:hover a {
+		color: #2c2c2c;
 	}
 }
 
