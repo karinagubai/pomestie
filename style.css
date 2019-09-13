@@ -560,6 +560,7 @@ h1 .green {
 
 .bigform {
 	max-width: 705px;
+	display: none;
 }
 
 .input-file {
