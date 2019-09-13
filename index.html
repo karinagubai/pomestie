@@ -500,7 +500,7 @@
       </div>
     </section>
 
-    <section id="bigform">
+    <section id="bigform" class="position-relative">
       <div class="container-fluid text-center section-padding">
         <div class="d-flex justify-content-center justify-content-lg-end">
           <div class="form-block text-lg-left">
@@ -522,11 +522,11 @@
                   <label for="file" class="green addfile"><img src="img/icon-paperclip.png" alt="" class="paperclip">Если у Вас есть проект, прикрепите его</label>
                 </div>
                 <div class="col-12 col-sm-6">
-                    <label for="date">Укажите дату и время для звонка</label>
+                    <label for="date" class="font-regular">Укажите дату и время для звонка</label>
                     <input type="text" id="date" name="date" placeholder="ДД.ММ" class="input-rounded">
                 </div>
                 <div class="col-12 col-sm-6 d-flex flex-column">
-                    <div class="order-1 order-sm-0"><input type="checkbox"><label class="anytime">В любое время</label></div>
+                    <div class="order-1 order-sm-0"><input type="checkbox"><label class="anytime font-regular">В любое время</label></div>
                     <input type="text" id="time" name="time" placeholder="--:--" class="input-rounded">
                 </div>
                 <div class="col-12 d-flex flex-column flex-md-row align-items-center">
@@ -536,12 +536,13 @@
                     <label for="agree">Нажимая на кнопку, я соглашаюсь с <a href="#">политикой&nbsp;конфиденциальности</a></label>
                   </div>
                 </div>
-              </div>
-
+              </div><!-- /.row -->
             </form>
-          </div>
-        </div>
-      </div>
+          </div><!-- /.form-block -->
+        </div><!-- /.justify-content-end -->
+      </div><!-- /.container-fluid -->
+      <div class="bigform-house position-absolute"></div>
+      <div class="bigform-tree position-absolute"></div>
     </section>
 
     <footer></footer>
