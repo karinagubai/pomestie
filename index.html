@@ -501,25 +501,46 @@
     </section>
 
     <section id="bigform">
-      <div class="container-fluid text-center">
-        <h2 class="font-black">Построим дом или коттедж быстро, качественно и недорого</h2>
-        <p>Оставьте заявку и мы перезвоним в удобное для Вас время</p>
-        <form class="bigform">
-          <input type="text" id="name" name="name" placeholder="Ваше имя" class="input-rounded">
-          <input type="tel" id="tel" name="tel" placeholder="+_ (___) ___ __ __"  class="input-rounded">
-          <input type="email" id="email" name="email" placeholder="Ваш email" class="input-rounded">
-          <input type="file" id="file" name="file" class="input-file">
-          <label for="file"><img src="img/icon-paperclip.png" alt="" class="paperclip">Если у Вас есть проект, прикрепите его</label>
-          <div class="labeled">
-            <label for="date"></label>
-            <input type="text" id="date" name="date" placeholder="ДД.ММ" class="input-rounded">
+      <div class="container-fluid text-center section-padding">
+        <div class="d-flex justify-content-center justify-content-lg-end">
+          <div class="form-block text-lg-left">
+            <h2 class="font-black">Построим дом или коттедж быстро, качественно и недорого</h2>
+            <p class="bigform-text font-regular">Оставьте заявку и мы перезвоним в удобное для Вас время</p>
+            <form>
+              <div class="row">
+                <div class="col-12 col-sm-6">
+                  <input type="text" id="name" name="name" placeholder="Ваше имя" class="input-rounded not-labeled">
+                </div>
+                <div class="col-12 col-sm-6">
+                  <input type="tel" id="tel" name="tel" placeholder="+_ (___) ___ __ __"  class="input-rounded not-labeled">
+                </div>
+                <div class="col-12 col-sm-6">
+                  <input type="email" id="email" name="email" placeholder="Ваш email" class="input-rounded not-labeled">
+                </div>
+                <div class="col-12 col-sm-6">
+                  <input type="file" id="file" name="file" class="input-file not-labeled">
+                  <label for="file" class="green addfile"><img src="img/icon-paperclip.png" alt="" class="paperclip">Если у Вас есть проект, прикрепите его</label>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <label for="date">Укажите дату и время для звонка</label>
+                    <input type="text" id="date" name="date" placeholder="ДД.ММ" class="input-rounded">
+                </div>
+                <div class="col-12 col-sm-6 d-flex flex-column">
+                    <div class="order-1 order-sm-0"><input type="checkbox"><label class="anytime">В любое время</label></div>
+                    <input type="text" id="time" name="time" placeholder="--:--" class="input-rounded">
+                </div>
+                <div class="col-12 d-flex flex-column flex-md-row align-items-center">
+                  <button type="submit" class="btn btn-callout">Жду звонка</button>
+                  <div class="agree-block">
+                    <input type="checkbox" id="agree" name="agree" checked>
+                    <label for="agree">Нажимая на кнопку, я соглашаюсь с <a href="#">политикой&nbsp;конфиденциальности</a></label>
+                  </div>
+                </div>
+              </div>
+
+            </form>
           </div>
-          <div class="labeled">
-            <input type="checkbox"><label>В любое время</label>
-            <input type="text" id="time" name="time" placeholder="--:--" class="input-rounded">
-          </div>
-          <button type="submit" class="btn btn-callout">Жду звонка</button>
-        </form>
+        </div>
       </div>
     </section>
 

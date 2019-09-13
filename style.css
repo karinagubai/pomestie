@@ -232,6 +232,10 @@ header {
 	background: url('img/bg-arguments.png') no-repeat center/contain;
 }
 
+#bigform {
+	background: url('img/bg-skybigform.jpg') no-repeat center/cover;
+}
+
 /* ---- Page Elements ---- */
 
 .font-light {
@@ -558,9 +562,13 @@ h1 .green {
 
 /* ---- Big form ---- */
 
-.bigform {
+.form-block {
 	max-width: 705px;
-	display: none;
+}
+
+.bigform-text {
+	margin-bottom: 30px;
+	font-size: 22px;
 }
 
 .input-file {
@@ -574,6 +582,18 @@ h1 .green {
 
 .paperclip {
 	margin-right: 10px;
+}
+
+.anytime {
+	margin-left: 10px;
+}
+
+.addfile {
+	margin-bottom: 20px;
+}
+
+#bigform .agree-block {
+	margin-top: 20px;
 }
 
 /* ---- Buttons and links ---- */
@@ -735,13 +755,13 @@ h1 .green {
 		-webkit-animation: .7s linear .5s infinite alternate movearrow;
     animation: .7s linear .5s infinite alternate movearrow;
 	}
-	#arguments .arrow-right {
+	/* #arguments .arrow-right {
 		top: 120px;
 	}
 	@keyframes movearrow {
   from { right: 20px; }
   to   { right: 5px; }
-}
+} */
 }
 
 @media (min-width: 420px) and (max-width: 530px){
@@ -812,6 +832,20 @@ h1 .green {
 	.service:hover .service-info,
 	.service:hover a {
 		color: #2c2c2c;
+	}
+	#bigform form {
+		text-align: left;
+	}
+	.addfile {
+		margin-bottom: 0;
+		margin-top: 10px;
+	}
+}
+
+@media (max-width: 767px) {
+	.input-rounded {
+		width: 100%;
+		max-width: 335px;
 	}
 }
 
@@ -961,6 +995,19 @@ h1 .green {
 		right: 0;
 		background: url('img/service-instrument.png') no-repeat;
 		background-position: left top;
+	}
+	#bigform .input-rounded,
+	.labeled {
+		 width: 335px;
+		 margin: 0;
+		 margin-bottom: 20px;
+	}
+	.addfile {
+		margin-top: 20px;
+	}
+	#bigform .agree-block {
+		margin-top: 0;
+		margin-left: 20px;
 	}
 }
 
