@@ -41,4 +41,23 @@ $('.left').on('click', function(){
 
 $(document).ready(function(){
   $('input[type="tel"]').inputmask("+7 (999) 999 99 99");
+  $('#date').inputmask("99.99", {"placeholder": "ДД.ММ"});
+  $('#time').inputmask("99:99", {"placeholder": "--:--"});
 });
+
+// insert div with leaf in 7th service
+$( '.service-leaf' ).appendTo($('#services .scrollx-item:nth-of-type(7)'));
+
+// moving arrow on mobile devices should stop on scrolling
+
+
+// $('.scrollx-container').on('scroll', function(){
+//   const $numOfItems = $(this).children('.scrollx-item').length;
+//   const $itemWidth = $(this).children('.scrollx-item').width();
+//   const contParent = $(this).parent().parent().prev().attr('class');
+//   alert(contParent);
+//   $(this).parent().parent().prev().css('animation-play-state', 'paused');
+//   if ($(this).scrollLeft() > ($itemWidth * ( $numOfItems - 1 ))) {
+//     $(this).parent().parent().prev().hide();
+//   }
+// });

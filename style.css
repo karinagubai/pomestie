@@ -43,6 +43,7 @@
 body {
   font-family: 'Museo100', Arial, sans-serif;
 	font-size: 16px;
+	overflow-x: hidden;
 }
 
 h1 {
@@ -227,6 +228,10 @@ header {
 	padding-bottom: 40px;
 }
 
+#arguments {
+	background: url('img/bg-arguments.png') no-repeat center/contain;
+}
+
 /* ---- Page Elements ---- */
 
 .font-light {
@@ -408,6 +413,8 @@ h1 .green {
 }
 
 .input-rounded {
+	width: 100%;
+  max-width: 335px;
 	outline: none;
 	border: none;
 	box-shadow: inset 0 0 16px rgba(0, 0, 0, .14);
@@ -465,6 +472,7 @@ h1 .green {
 	margin-bottom: 30px;
 	transition: all .5s;
 	height: 170px;
+	z-index: 1;
 }
 
 .service-overlay {
@@ -517,6 +525,7 @@ h1 .green {
 	height: 320px;
 	border-radius: 10px;
 	padding: 15px;
+	background: white;
 	box-shadow: 0 5px 24px 0 rgba(44, 44, 44, .11);
 }
 
@@ -549,6 +558,26 @@ h1 .green {
 	z-index: 2;
 }
 
+/* ---- Big form ---- */
+
+.bigform {
+	max-width: 705px;
+	display: none;
+}
+
+.input-file {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.paperclip {
+	margin-right: 10px;
+}
+
 /* ---- Buttons and links ---- */
 
 .green-dotted {
@@ -573,6 +602,11 @@ h1 .green {
 	font-size: 16px;
 	border-radius: 33px;
 	padding: 20px 40px;
+}
+
+.btn,
+.input-file + label {
+	cursor: pointer;
 }
 
 .btn-callout {
@@ -692,6 +726,24 @@ h1 .green {
 	#arguments {
 		padding-bottom: 0;
 	}
+	.arrow-right {
+		height: 30px;
+		width: 40px;
+		top: 70px;
+		right: 5px;
+		background: url('img/arrow-right.png') no-repeat;
+		background-size: contain;
+		opacity: .5;
+		-webkit-animation: .7s linear .5s infinite alternate movearrow;
+    animation: .7s linear .5s infinite alternate movearrow;
+	}
+	#arguments .arrow-right {
+		top: 120px;
+	}
+	@keyframes movearrow {
+  from { right: 20px; }
+  to   { right: 5px; }
+}
 }
 
 @media (min-width: 420px) and (max-width: 530px){
@@ -878,6 +930,39 @@ h1 .green {
 	}
 	.service {
 		height: 249px;
+	}
+	.service-kaska {
+		height: 145px;
+		width: 161px;
+		top: -70px;
+		left: -50px;
+		background: url('img/service-kaska.png') no-repeat;
+		background-position: right top;
+		z-index: 3;
+	}
+	.service-kirpich {
+		height: 138px;
+		width: 204px;
+		top: 200px;
+		left: 60%;
+		background: url('img/service-kirpich.png') no-repeat;
+	}
+	.service-leaf {
+		position:absolute;
+		height: 81px;
+		width: 82px;
+		bottom: 5px;
+		right: -15px;
+		background: url('img/service-leaf.png') no-repeat;
+		z-index: 3;
+	}
+	.service-instrument {
+		height: 255px;
+		width: 180px;
+		bottom: 148px;
+		right: 0;
+		background: url('img/service-instrument.png') no-repeat;
+		background-position: left top;
 	}
 }
 
