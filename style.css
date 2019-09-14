@@ -617,6 +617,48 @@ h1 .green {
 	background-position: center;
 }
 
+/* ---- Footer ---- */
+
+footer {
+	padding-top: 25px;
+	padding-bottom: 40px;
+}
+
+.copyright {
+	font-size: 13px;
+	color: #2c2c2c;
+}
+
+.copyright a {
+	color: #747474;
+	text-decoration: underline;
+}
+
+.contact-block {
+	margin-bottom: 8px;
+	align-self: start;
+}
+
+.contact-block img {
+	margin-right: 5px;
+}
+
+.footer-address {
+	margin-top: 30px;
+}
+
+.up-and-insta {
+	margin-top: 30px;
+}
+.arrow-up {
+	padding: 15px;
+	border-radius: 10px;
+	width: 56px;
+	height: 56px;
+	box-shadow: 0 11px 24px 0 rgba(15, 14, 14, .15);
+	margin-top: 20px;
+}
+
 /* ---- Buttons and links ---- */
 
 .green-dotted {
@@ -1039,6 +1081,9 @@ h1 .green {
 	.bigform-house {
 		background-size: contain;
 	}
+	.footer-phones {
+		margin-top: 30px;
+	}
 }
 
 @media (max-width: 991px) {
@@ -1172,6 +1217,14 @@ h1 .green {
 	.bigform-house {
 		background-position: -370px;
 	}
+	.up-and-insta {
+    margin-top: 130px;
+		min-width: 117px;
+  }
+	.arrow-up {
+    margin-top: 0;
+		margin-left: 30px;
+  }
 }
 
 @media (min-width: 1100px) {
@@ -1226,4 +1279,7 @@ h1 .green {
 	.bigform-house {
 		height: 100%;
 	}
+	.up-and-insta {
+    margin-top: 0;
+  }
 }
