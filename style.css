@@ -527,15 +527,11 @@ h1 .green {
 
 .argument {
 	position: relative;
-	width: 206px;
 	height: 320px;
 	border-radius: 10px;
-	padding: 15px;
+	padding: 0;
 	background: white;
 	box-shadow: 0 5px 24px 0 rgba(44, 44, 44, .11);
-}
-
-.argument {
 	margin-top: 70px;
 }
 
@@ -550,11 +546,12 @@ h1 .green {
 
 .argnum {
 	position: absolute;
-	bottom: 0px;
-	left: 45px;
+	bottom: 0;
+	left: 0;
 	height: 60px;
+	width: 100%;
 	color: #f7f9fa;
-	font-size: 100px;
+	font-size: 80px;
 	line-height: 100px;
 	overflow: hidden;
 }
@@ -735,6 +732,9 @@ footer {
 	.btn {
 		font-size: 14px;
 	}
+	.service img {
+    max-width: 240%;
+	}
 }
 
 @media (min-width: 420px){
@@ -756,12 +756,24 @@ footer {
 	.service-link {
 		font-size: 16px;
 	}
+	.argument {
+		padding: 5px;
+	}
+	.argnum {
+		font-size: 100px;
+	}
 }
 
 @media (max-width: 420px){
 
-	.scrollx-item {
+	/* .scrollx-item {
 		max-width: 90%;
+	} */
+	.argument h3 {
+		font-size: 16px;
+	}
+	.argument p {
+		font-size: 14px;
 	}
 }
 
@@ -775,7 +787,7 @@ footer {
 	.telnumber {
 		font-size: 18px;
 	}
-	.scrollx-container {
+	/* .scrollx-container {
 		flex-wrap: nowrap;
 		justify-content: start!important;
 		margin-right: 0;
@@ -806,7 +818,7 @@ footer {
 	}
 	#arguments {
 		padding-bottom: 0;
-	}
+	} */
 	.arrow-right {
 		height: 30px;
 		width: 40px;
@@ -825,10 +837,18 @@ footer {
   from { right: 20px; }
   to   { right: 5px; }
 } */
+#services .col-6,
+#arguments .col-6 {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.service {
+	margin-bottom: 10px;
+}
 }
 
 @media (min-width: 420px) and (max-width: 530px){
-	#arguments .scrollx-item {
+	/* #arguments .scrollx-item {
 		max-width: 296px;
 	}
 	#arguments .scrollx-item:first-item {
@@ -837,7 +857,7 @@ footer {
 	.argument {
 		width: 266px;
 		height: 280px;
-	}
+	} */
 }
 
 @media (min-width: 576px) {
@@ -895,6 +915,10 @@ footer {
 	.service:hover .service-info,
 	.service:hover a {
 		color: #2c2c2c;
+	}
+	.argument {
+		width: 206px;
+		padding: 15px;
 	}
 	#bigform form {
 		text-align: left;
